@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2854ad">
+  <title>Фон Браун Сергей Александрович — резюме</title>
+  <meta name="description" content="Резюме Сергея Фон Брауна: инженерное проектирование, аналитика данных и бизнес-аналитика.">
+  <style>
+    :root {
+      --blue: #2854ad;
+      --ink: #17191d;
+      --muted: #555b65;
+      --rule: #202124;
+      --paper: #fff;
+      --soft: #e9eef8;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: #f1f3f6; color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif; line-height: 1.45;
+    }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .resume {
+      width: min(100%, 1050px); margin: 28px auto; background: var(--paper);
+      box-shadow: 0 14px 42px rgba(18, 31, 55, .12); overflow: hidden;
+    }
+    .hero {
+      min-height: 285px; background: var(--blue); color: white; position: relative;
+      padding: 56px 7% 38px 39%; display: flex; flex-direction: column; justify-content: center;
+    }
+    .hero::after {
+      content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+      background: #141820;
+    }
+    .portrait {
+      position: absolute; z-index: 2; left: 7%; bottom: -68px; width: 25%; max-width: 245px;
+      height: 260px; background: #e8edf3; border: 5px solid white;
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      color: #596579; font-size: 13px; padding: 20px;
+    }
+    .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .eyebrow {
+      margin: 0 0 12px; font-size: 12px; letter-spacing: .24em; text-transform: uppercase;
+      opacity: .82;
+    }
+    h1 { margin: 0; font-size: clamp(30px, 4.7vw, 54px); line-height: 1.05; letter-spacing: .1em; font-weight: 800; }
+    .headline { margin-top: 17px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; opacity: .94; }
+    .contact {
+      padding: 28px 8% 26px 39%; min-height: 144px;
+    }
+    .contact h2, .section h2 {
+      font-size: 15px; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 12px;
+    }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; font-size: 12px; color: var(--muted); }
+    .contact-grid p { margin: 0; overflow-wrap: anywhere; }
+    .layout { display: grid; grid-template-columns: 29% 1fr; gap: 6%; padding: 0 8% 60px 7%; }
+    .section { border-top: 2px solid var(--rule); padding-top: 11px; margin-bottom: 30px; }
+    .section p, .section li { font-size: 12px; color: var(--muted); }
+    .section p { margin: 0 0 10px; }
+    ul { margin: 0; padding-left: 17px; }
+    li { margin: 0 0 5px; }
+    .role { margin-bottom: 20px; }
+    .role h3, .education-item h3 {
+      margin: 0 0 3px; font-size: 12px; line-height: 1.35; font-weight: 800;
+      text-transform: uppercase; letter-spacing: .025em;
+    }
+    .meta { font-size: 11px !important; color: #202124 !important; font-weight: 700; margin-bottom: 7px !important; }
+    .role ul { padding-left: 14px; }
+    .role li { font-size: 11.5px; color: #363b44; margin-bottom: 5px; }
+    .skill-group { margin-bottom: 13px; }
+    .skill-group strong { color: #252932; }
+    .education-item { margin-bottom: 13px; }
+    .education-item p { margin-top: 4px; }
+    .tagline { font-size: 11px; color: var(--muted); margin-top: 16px; }
+    .footer { background: #f7f8fa; padding: 14px 8%; color: #737985; font-size: 10px; }
+    @media (max-width: 680px) {
+      .resume { margin: 0 auto; }
+      .hero { min-height: 250px; padding: 36px 6% 30px 40%; }
+      .portrait { left: 5%; bottom: -50px; width: 31%; height: 205px; padding: 12px; font-size: 11px; }
+      .eyebrow { font-size: 9px; letter-spacing: .14em; }
+      h1 { font-size: clamp(23px, 6vw, 35px); letter-spacing: .06em; }
+      .headline { font-size: 9px; letter-spacing: .08em; }
+      .contact { padding: 70px 6% 25px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 6px; }
+      .layout { grid-template-columns: 1fr; gap: 0; padding: 0 6% 35px; }
+      .section { margin-bottom: 24px; }
+      .section p, .section li { font-size: 13px; }
+      .role li { font-size: 12.5px; }
+    }
+    @media print {
+      body { background: white; }
+      .resume { width: 100%; margin: 0; box-shadow: none; }
+      .footer { display: none; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume">
+    <header class="hero">
+      <div class="portrait">
+        <!-- Добавьте своё фото в репозиторий под именем photo.jpg и раскомментируйте строку ниже -->
+        <!-- <img src="photo.jpg" alt="Фото Сергея Фон Брауна"> -->
+        <span>Место для фотографии<br><br>Добавьте файл <b>photo.jpg</b><br>и включите строку img в index.html</span>
+      </div>
+      <p class="eyebrow">Резюме · Екатеринбург</p>
+      <h1>ФОН БРАУН<br>СЕРГЕЙ</h1>
+      <p class="headline">Инженер-конструктор · Аналитик данных · Бизнес-аналитик</p>
+    </header>
+
+    <section class="contact">
+      <h2>Контактная информация</h2>
+      <div class="contact-grid">
+        <p>Телефон: <a href="tel:+79961797966">+7 996 179-79-66</a></p>
+        <p>Email: <a href="mailto:serqius.ridder@qmail.com">serqius.ridder@qmail.com</a></p>
+        <p>Telegram: <a href="https://t.me/baron_1_1" target="_blank" rel="noopener">@baron_1_1</a></p>
+        <p>Город: Екатеринбург</p>
+      </div>
+    </section>
+
+    <div class="layout">
+      <aside>
+        <section class="section">
+          <h2>Профиль</h2>
+          <p>Инженер-конструктор с фокусом на аналитике данных и бизнес-аналитике. Сочетаю инженерное проектирование и работу с данными: от 3D-моделирования и CAD до баз данных, Python и машинного обучения.</p>
+          <p>Выполнял частные заказы по 3D-моделированию, работе с базами данных и разработке сайтов. Обучаюсь в УрФУ и стремлюсь решать прикладные инженерные и аналитические задачи.</p>
+        </section>
+
+        <section class="section">
+          <h2>Ключевые навыки</h2>
+          <ul>
+            <li>Системное и аналитическое мышление</li>
+            <li>Внимание к деталям</li>
+            <li>Решение технических задач</li>
+            <li>Ответственность за результат</li>
+            <li>Общение с нетехническими заказчиками</li>
+            <li>Быстрое освоение инструментов</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Языки</h2>
+          <p><strong>Русский</strong> — родной</p>
+          <p><strong>Английский</strong> — базовый</p>
+        </section>
+      </aside>
+
+      <div class="main-column">
+        <section class="section">
+          <h2>Опыт работы</h2>
+          <div class="role">
+            <h3>Фриланс / частные заказы</h3>
+            <p class="meta">2024 — 2026</p>
+            <ul>
+              <li>Разрабатывал 3D-модели и конструкторскую документацию в КОМПАС-3D; готовил чертежи и спецификации по ЕСКД.</li>
+              <li>Проектировал и настраивал базы данных PostgreSQL и MySQL: схемы, миграции, запросы и права доступа.</li>
+              <li>Создавал сайты и веб-интерфейсы: прототипирование, HTML/CSS, базовая логика и интеграция с БД.</li>
+              <li>Автоматизировал задачи на Python, обрабатывал данные, формировал отчёты и интегрировал внешние API.</li>
+              <li>Выполнял учебные и прикладные ML-задачи: предобработка данных, обучение базовых моделей классификации и прогнозирования, визуализация результатов.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Специализация и инструменты</h2>
+          <div class="skill-group">
+            <p><strong>Инженерное проектирование и 3D:</strong> КОМПАС-3D (сборочные единицы, чертежи по ЕСКД), SolidWorks (базовый уровень), Blender (концепт-моделирование и визуализация), подготовка моделей к 3D-печати и ЧПУ.</p>
+          </div>
+          <div class="skill-group">
+            <p><strong>Аналитика и визуализация:</strong> сбор и формализация требований, BPMN, UML, Power BI, Tableau, Matplotlib, Seaborn, отчётность и дашборды.</p>
+          </div>
+          <div class="skill-group">
+            <p><strong>Базы данных:</strong> PostgreSQL, MySQL, реляционное проектирование, нормализация, индексы, оптимизация запросов, базовые миграции и резервное копирование.</p>
+          </div>
+          <div class="skill-group">
+            <p><strong>Разработка и автоматизация:</strong> Python, ООП, типизация, HTML/CSS, базовый JavaScript, FastAPI/Flask, ETL-скрипты, API, JSON/XML.</p>
+          </div>
+          <div class="skill-group">
+            <p><strong>Машинное обучение:</strong> основы ML-пайплайнов, scikit-learn, оценка accuracy, F1 и MAE, интерпретация результатов для прикладных задач.</p>
+          </div>
+          <div class="skill-group">
+            <p><strong>Инструменты:</strong> Git (базовый уровень), Jupyter Notebook, Docker (запуск окружения).</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Образование</h2>
+          <div class="education-item">
+            <h3>Уральский федеральный университет (УрФУ)</h3>
+            <p>ФТИ · «Информационные системы и технологии»</p>
+            <p class="meta">2024 — 2029</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Дополнительно</h2>
+          <p>Ориентирован на практическое применение знаний, умею разбираться в сложных технических вопросах и доводить задачи до результата.</p>
+        </section>
+      </div>
+    </div>
+    <div class="footer">Резюме · Фон Браун Сергей Александрович</div>
+  </main>
+</body>
+</html>
